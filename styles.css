@@ -1,0 +1,711 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fraunces', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: white;
+    overflow-x: hidden;
+    max-width: 100vw;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Navigation */
+.main-nav {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #428369;
+    color: white;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 0 15px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 120px;
+    color: #428369;
+    margin: 40px 0;
+}
+
+.image-container {
+    width: 90%;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 0 auto 40px auto;
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.toucan-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.tagline {
+    margin: 40px 0;
+}
+
+.tagline-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 64px;
+    color: #333;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.hours-section {
+    flex: 1;
+    text-align: left;
+}
+
+.hours-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #428369;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.day-hours {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.day {
+    font-weight: 500;
+}
+
+.map-section {
+    flex: 1;
+}
+
+.map-placeholder {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map-placeholder p {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* What's On Page */
+.whats-on-container {
+    width: 40%;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 0 auto 40px auto;
+    border-radius: 8px;
+}
+
+/* Venue Hire Page */
+.venue-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.venue-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+}
+
+.venue-image {
+    width: 100%;
+    height: 300px;
+    background-color: #428369;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.venue-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #428369;
+    margin-bottom: 20px;
+}
+
+.venue-description {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.venue-details {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Page */
+.contact-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.contact-content {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.contact-form-section,
+.contact-info-section {
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Fraunces', serif;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #428369;
+}
+
+.submit-btn {
+    background-color: #428369;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #356b56;
+}
+
+.contact-info h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #428369;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Gallery Page */
+.gallery-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-medium {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.gallery-small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.gallery-wide {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/* Gallery Background Colors */
+.gallery-bg-1 { background-color: #428369; }
+.gallery-bg-2 { background-color: #5a9b7d; }
+.gallery-bg-3 { background-color: #6ba888; }
+.gallery-bg-4 { background-color: #7cb593; }
+.gallery-bg-5 { background-color: #8dc29e; }
+.gallery-bg-6 { background-color: #9ecfa9; }
+
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #428369;
+    margin-bottom: 15px;
+}
+
+.instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.instagram-post {
+    width: 50px;
+    height: 50px;
+    background-color: #428369;
+    border-radius: 4px;
+}
+
+.instagram-handle {
+    font-family: 'Fraunces', serif;
+    font-size: 14px;
+    color: #428369;
+    text-decoration: none;
+}
+
+.instagram-handle:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 100px;
+    }
+    
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hours-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 64px;
+        margin: 30px 0;
+        line-height: 1.1;
+    }
+    
+    .nav-menu {
+        gap: 12px;
+        padding: 0 5px;
+    }
+    
+    .nav-link {
+        font-size: 13px;
+        padding: 10px 14px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image-container {
+        width: 95%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .toucan-image {
+        max-height: 250px;
+        margin-bottom: 30px;
+    }
+    
+    .tagline {
+        margin: 30px 0;
+    }
+    
+    .tagline-text {
+        font-size: 40px;
+    }
+    
+    .info-section {
+        margin: 60px auto 0;
+        gap: 30px;
+        padding: 0 10px;
+    }
+    
+    .hours-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .day-hours {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .map-placeholder {
+        height: 200px;
+        padding: 20px;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+        gap: 10px;
+    }
+    
+    .gallery-large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .gallery-medium,
+    .gallery-wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav {
+        padding: 15px 0;
+    }
+    
+    .main-title {
+        font-size: 48px;
+        margin: 20px 0;
+        line-height: 1.0;
+    }
+    
+    .nav-menu {
+        gap: 8px;
+        padding: 0 5px;
+    }
+    
+    .nav-link {
+        font-size: 11px;
+        padding: 8px 10px;
+        min-height: 40px;
+        border-radius: 6px;
+    }
+    
+    main {
+        padding: 0 10px;
+    }
+    
+    .image-container {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+    
+    .toucan-image {
+        max-height: 200px;
+        margin-bottom: 25px;
+    }
+    
+    .tagline {
+        margin: 25px 0;
+    }
+    
+    .tagline-text {
+        font-size: 28px;
+    }
+    
+    .info-section {
+        flex-direction: column;
+        margin: 40px auto 0;
+        gap: 25px;
+        padding: 0 5px;
+    }
+    
+    .hours-section {
+        text-align: center;
+    }
+    
+    .hours-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .day-hours {
+        font-size: 14px;
+        margin-bottom: 4px;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .map-placeholder {
+        height: 150px;
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .venue-card {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .venue-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .venue-description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .venue-details {
+        font-size: 13px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 180px;
+        gap: 8px;
+    }
+    
+    .gallery-large,
+    .gallery-medium,
+    .gallery-wide,
+    .gallery-small {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .footer {
+        padding: 30px 15px;
+    }
+    
+    .footer-text {
+        font-size: 14px;
+    }
+    
+    .social-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .instagram-feed {
+        grid-template-columns: repeat(3, 40px);
+        gap: 6px;
+    }
+    
+    .instagram-post {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .instagram-handle {
+        font-size: 12px;
+    }
+}
+
+/* Ultra-small screens (320px and below) */
+@media (max-width: 320px) {
+    .main-title {
+        font-size: 36px;
+    }
+    
+    .nav-menu {
+        gap: 5px;
+    }
+    
+    .nav-link {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+    
+    .image-container {
+        height: 200px;
+    }
+    
+    .tagline-text {
+        font-size: 18px;
+    }
+    
+    .hours-title {
+        font-size: 18px;
+    }
+    
+    .day-hours {
+        font-size: 13px;
+        gap: 15px;
+    }
+    
+    .instagram-feed {
+        grid-template-columns: repeat(2, 35px);
+    }
+    
+    .instagram-post {
+        width: 35px;
+        height: 35px;
+    }
+}
